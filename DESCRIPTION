@@ -1,0 +1,13 @@
+Package: hpconf
+Type: Package
+Title: Construct Confidence Bands for the Hodrick-Prescott Filter
+Version: 0.0.1
+Authors@R: person("Franz X.", "Mohr", email = "hpconfR@outlook.com",
+  role = c("aut", "cre"))
+Description: An implementation for the calculation of confidence for the Hodrick-Prescott filter based on the working paper by Giles (2012).
+Depends: R (>= 2.2.0)
+Imports: mFilter, stats
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
