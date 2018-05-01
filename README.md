@@ -1,4 +1,4 @@
 # Confidence Bands for the Hodrick-Prescott Filter
 
 ## References
-Giles, D. E. (2012) <a href="http://www.uvic.ca/socialsciences/economics/assets/docs/econometrics/ewp1202.pdf" target="_blank">Constructing Confidence Bands for the Hodrick-Prescott Filter</a>. Econometrics Working Papers 1202, University of Victoria. 
+David E. Giles (2012) Constructing confidence bands for the Hodrick–Prescott filter, Applied Economics Letters, 20:5, 480-484, DOI: 10.1080/13504851.2012.714057
