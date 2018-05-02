@@ -4,7 +4,7 @@
 \alias{hpconf}
 \title{Confidence Bands for the Hodrick-Prescott Filter}
 \source{
-Giles, D. E. (2012) Constructing Confidence Bands for the Hodrick-Prescott Filter. Econometrics Working Papers 1202, University of Victoria.
+David E. Giles (2013) Constructing confidence bands for the Hodrick-Prescott filter, Applied Economics Letters, 20:5, 480-484, DOI: \url{https://doi.org/10.1080/13504851.2012.714057}.
 }
 \usage{
 hpconf(data, V_y = NULL, ci = 0.05)
@@ -19,4 +19,16 @@ the sample variance of the cyclical component will be used.}
 }
 \description{
 Constructs confidence bands for the Hodrick-Prescott filter
+}
+\details{
+The function uses the filter matrix \eqn{F} from an "mFilter" object to obtain the matrix \eqn{Q = \left[I_T + \lambda K' K]^{-1}\right]}.
+Since \eqn{Q y} provides an estimate of the trend \eqn{\hat{tau}} and \eqn{F y} yields the cyclical component of the process \eqn{\hat{c}} and the
+time series \eqn{y} is decomposed only into those two components so that \eqn{y = \hat{tau} + \hat{c}},
+\eqn{Q} can be obtained from \eqn{I_T y - Fy = Q y} so that \eqn{Q = \left[I_T - F \right]}.
+
+The confidence band is than derived from the covariance matrix \eqn{V(\hat{tau}) = Q V(y) Q}.
+
+By default \code{V_y = NULL} so that the sample variance of the cyclical componenten of the time series
+is used for the construction of \eqn{V(y)}. This can be chanced by providing
+a numeric value, for example from the output of an esitmated ARIMA model for the cyclical component of the series.
 }
