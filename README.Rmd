@@ -28,7 +28,8 @@ data(unemp)
 hp_unemp <- hpfilter(unemp)
 hp_conf <- hpconf(hp_unemp)
 
-plot(hp_conf, plot.type = "single", col = c("blue", "red", "red", "black"))
+plot(hp_conf, ylab = "unemp",
+     plot.type = "single", col = c("blue", "red", "red", "black"))
 ```
 
 ## References
