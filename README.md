@@ -29,7 +29,7 @@ data("unemp")
 # Run HP-filter
 hp_unemp <- hpfilter(unemp)
 
-# Obtain confidence intervals
+# Obtain confidence bands
 hp_conf <- hpconf(hp_unemp)
 
 # Plot the diagram

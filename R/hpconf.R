@@ -21,8 +21,8 @@
 #' @return A time-series object of four variables
 #' \itemize{
 #'  \item \strong{trend:} The estimated trend component
-#'  \item \strong{ci_lower:} The lower bound of the confidence interval
-#'  \item \strong{ci_upper:} The upper bound of the confidence interval
+#'  \item \strong{ci_lower:} The lower bound of the confidence band
+#'  \item \strong{ci_upper:} The upper bound of the confidence band
 #'  \item \strong{y:} The actual series
 #' }
 #' 
