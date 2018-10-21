@@ -3,9 +3,6 @@
 \name{hpconf}
 \alias{hpconf}
 \title{Confidence Bands for the Hodrick-Prescott Filter}
-\source{
-David E. Giles (2013) Constructing confidence bands for the Hodrick-Prescott filter, Applied Economics Letters, 20:5, 480-484, DOI: \url{https://doi.org/10.1080/13504851.2012.714057}.
-}
 \usage{
 hpconf(data, V_y = NULL, ci = 0.05)
 }
@@ -16,6 +13,15 @@ hpconf(data, V_y = NULL, ci = 0.05)
 the sample variance of the cyclical component will be used.}
 
 \item{ci}{numeric between 0 and 1 specifying the confidence interval, defaults to 0.05.}
+}
+\value{
+A time-series object of four variables
+\itemize{
+ \item \strong{trend:} The estimated trend component
+ \item \strong{ci_lower:} The lower bound of the confidence interval
+ \item \strong{ci_upper:} The upper bound of the confidence interval
+ \item \strong{y:} The actual series
+}
 }
 \description{
 Constructs confidence bands for the Hodrick-Prescott filter
@@ -31,4 +37,7 @@ The confidence band is than derived from the covariance matrix \eqn{V(\hat{tau})
 By default \code{V_y = NULL} so that the sample variance of the cyclical componenten of the time series
 is used for the construction of \eqn{V(y)}. This can be chanced by providing
 a numeric value, for example from the output of an esitmated ARIMA model for the cyclical component of the series.
+}
+\references{
+Giles, D. E. (2013). Constructing confidence bands for the Hodrick-Prescott filter. \emph{Applied Economics Letters, 20}(5), 480--484. \url{https://doi.org/10.1080/13504851.2012.714057}.
 }
