@@ -22,7 +22,7 @@ Usage
 library(mFilter)
 library(hpconf)
 
-data(unemp)
+data("unemp")
 
 hp_unemp <- hpfilter(unemp)
 hp_conf <- hpconf(hp_unemp)
@@ -36,4 +36,4 @@ plot(hp_conf, ylab = "unemp",
 References
 ----------
 
-David E. Giles (2013) Constructing confidence bands for the Hodrick-Prescott filter, Applied Economics Letters, 20:5, 480-484, DOI: <a href="https://doi.org/10.1080/13504851.2012.714057" target="_blank">10.1080/13504851.2012.714057</a>.
+David E. Giles (2013). Constructing confidence bands for the Hodrick-Prescott filter, *Applied Economics Letters (20)*5, 480--484, <a href="https://doi.org/10.1080/13504851.2012.714057" target="_blank">10.1080/13504851.2012.714057</a>
