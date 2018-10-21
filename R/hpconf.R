@@ -64,5 +64,6 @@ hpconf <- function(data, V_y = NULL, ci = .05) {
   ci_high <- trend + ci * se
 
   result <- cbind(trend, ci_low, ci_high, y)
+  class(result) <- append("hpconf", class(result))
   return(result)
 }

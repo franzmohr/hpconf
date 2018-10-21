@@ -33,8 +33,7 @@ hp_unemp <- hpfilter(unemp)
 hp_conf <- hpconf(hp_unemp)
 
 # Plot the diagram
-plot(hp_conf, ylab = "unemp",
-     plot.type = "single", col = c("blue", "red", "red", "black"))
+plot(hp_conf)
 ```
 
 <img src="README_files/figure-markdown_github/intervals-1.png" style="display: block; margin: auto;" />
