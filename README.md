@@ -26,13 +26,13 @@ library(hpconf)
 # Load data
 data("unemp")
 
-# Run HP-filter
+# HP-filter
 hp_unemp <- hpfilter(unemp)
 
 # Obtain confidence bands
 hp_conf <- hpconf(hp_unemp)
 
-# Plot the diagram
+# Plot
 plot(hp_conf)
 ```
 
@@ -41,4 +41,4 @@ plot(hp_conf)
 References
 ----------
 
-Giles, D. E. (2013). Constructing confidence bands for the Hodrick-Prescott filter, <em>Applied Economics Letters (20)</em>5, 480-484. [10.1080/13504851.2012.714057](https://doi.org/10.1080/13504851.2012.714057)
+Giles, D. E. (2013). Constructing confidence bands for the Hodrick-Prescott filter, <em>Applied Economics Letters (20)</em>5, 480-484. <https://doi.org/10.1080/13504851.2012.714057>
