@@ -1,6 +1,6 @@
 Package: hpconf
 Type: Package
-Title: Construct Confidence Bands for the Hodrick-Prescott Filter
+Title: Confidence Bands for the Hodrick-Prescott Filter
 Version: 0.0.9000
 Authors@R: person("Franz X.", "Mohr", email = "hpconfR@outlook.com",
   role = c("aut", "cre"))
