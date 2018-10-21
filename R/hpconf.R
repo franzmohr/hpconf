@@ -53,5 +53,6 @@ hpconf <- function(data, V_y = NULL, ci = .05) {
   ci_low <- trend - ci * se
   ci_high <- trend + ci * se
 
-  return(cbind(trend, ci_low, ci_high, y))
+  result <- cbind(trend, ci_low, ci_high, y)
+  return(result)
 }
