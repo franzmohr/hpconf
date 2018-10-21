@@ -19,14 +19,20 @@ Usage
 -----
 
 ``` r
+# Load packages
 library(mFilter)
 library(hpconf)
 
+# Load data
 data("unemp")
 
+# Run HP-filter
 hp_unemp <- hpfilter(unemp)
+
+# Obtain confidence intervals
 hp_conf <- hpconf(hp_unemp)
 
+# Plot the diagram
 plot(hp_conf, ylab = "unemp",
      plot.type = "single", col = c("blue", "red", "red", "black"))
 ```
