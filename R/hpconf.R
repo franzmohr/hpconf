@@ -4,7 +4,7 @@
 #'
 #' @param data an object of class "mFilter" containing the output of the function \code{hpfilter}.
 #' @param V_y a numeric specifying the variance of the cyclical component. If \code{V_y = NULL} (default),
-#' the sample variance of the cyclical component will be used.
+#' the sample variance of the original series will be used.
 #' @param ci numeric between 0 and 1 specifying the confidence interval, defaults to 0.05.
 #' 
 #' @details The function uses the filter matrix \eqn{F} from an "mFilter" object to obtain the matrix \eqn{Q = \left[I_T + \lambda K' K]^{-1}\right]}.
@@ -37,7 +37,7 @@ hpconf <- function(data, V_y = NULL, ci = .05) {
   }
 
   if (class(data) != "mFilter") {
-    stop("Class of data must be 'mFilter'.")
+    stop("Class of object 'data' must be 'mFilter'.")
   }
 
   if (data$title != "Hodrick-Prescott Filter") {
@@ -52,14 +52,14 @@ hpconf <- function(data, V_y = NULL, ci = .05) {
   Q <- diag(1, t) - data$fmatrix
 
   if (is.null(V_y)) {
-    V_y <- stats::var(cycle) * diag(1, t)
+    V_y <- c(stats::var(y)) * diag(1, t)
   } else {
     V_y <- V_y * diag(1, t)
   }
 
   V_t <- Q %*% V_y %*% Q
   se <- matrix(sqrt(diag(V_t)))
-  ci <- stats::qnorm(1 - ci /2)
+  ci <- stats::qnorm(1 - ci / 2)
   ci_low <- trend - ci * se
   ci_high <- trend + ci * se
 

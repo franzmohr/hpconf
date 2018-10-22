@@ -10,7 +10,7 @@ hpconf(data, V_y = NULL, ci = 0.05)
 \item{data}{an object of class "mFilter" containing the output of the function \code{hpfilter}.}
 
 \item{V_y}{a numeric specifying the variance of the cyclical component. If \code{V_y = NULL} (default),
-the sample variance of the cyclical component will be used.}
+the sample variance of the original series will be used.}
 
 \item{ci}{numeric between 0 and 1 specifying the confidence interval, defaults to 0.05.}
 }
