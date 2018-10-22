@@ -40,7 +40,7 @@ hp_unemp <- hpfilter(unemp, freq = 14400)
 hp_unemp_conf <- hpconf(hp_unemp)
 
 # Plot
-plot(hp_unemp_conf)
+plot(hp_unemp_conf, main = "US unemployment rate", ylab = "", xlab = "", ylim = c(0, 12))
 ```
 
 <img src="README_files/figure-markdown_github/example 1-1.png" style="display: block; margin: auto;" />
