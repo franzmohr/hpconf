@@ -2,7 +2,7 @@ Package: hpconf
 Type: Package
 Title: Confidence Bands for the Hodrick-Prescott Filter
 Version: 0.0.9000
-Authors@R: person("Franz X.", "Mohr", email = "hpconfR@outlook.com",
+Authors@R: person("Franz X.", "Mohr", email = "hpconf.r@outlook.com",
   role = c("aut", "cre"))
 Description: An implementation for the construction of confidence bands for the Hodrick-Prescott filter as proposed in Giles (2013).
 Depends: R (>= 2.2.0)
