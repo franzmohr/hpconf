@@ -6,6 +6,8 @@ output:
 
 # hpconf
 
+[![Build Status](https://travis-ci.org/franzmohr/hpconf.svg?branch=master)](https://travis-ci.org/franzmohr/hpconf)
+
 ## Overview
 
 Provides a function for the calculation of confidence bands for the Hodrick-Prescott (HP) filter as proposed in Giles (2013).
