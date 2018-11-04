@@ -2,7 +2,7 @@
 hpconf
 ======
 
-[![GitHub Version](https://github.com/franzmohr/hpconf/releases)](https://github.com/franzmohr/hpconf/releases)) [![Build Status](https://travis-ci.org/franzmohr/hpconf.svg?branch=master)](https://travis-ci.org/franzmohr/hpconf)
+[![Build Status](https://travis-ci.org/franzmohr/hpconf.svg?branch=master)](https://travis-ci.org/franzmohr/hpconf)
 
 Overview
 --------
