@@ -30,7 +30,7 @@ Constructs confidence bands for the Hodrick-Prescott filter
 The function uses the filter matrix \eqn{F} from an "mFilter" object to obtain the matrix \eqn{Q = \left[I_T + \lambda K' K]^{-1}\right]}.
 Since \eqn{Q y} provides an estimate of the trend \eqn{\hat{tau}} and \eqn{F y} yields the cyclical component of the process \eqn{\hat{c}} and the
 time series \eqn{y} is decomposed only into those two components so that \eqn{y = \hat{tau} + \hat{c}},
-\eqn{Q} can be obtained from \eqn{I_T y - Fy = Q y} so that \eqn{Q = \left[I_T - F \right]}.
+\eqn{Q} can be obtained from \eqn{I_T y - Fy = Q y} so that \eqn{Q = I_T - F}.
 
 The confidence band is than derived from the covariance matrix \eqn{V(\hat{tau}) = Q V(y) Q}.
 
