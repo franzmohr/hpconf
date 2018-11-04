@@ -4,15 +4,15 @@
 \alias{hpconf}
 \title{Confidence Bands for the Hodrick-Prescott Filter}
 \usage{
-hpconf(data, V_y = NULL, ci = 0.05)
+hpconf(data, V_y = NULL, ci = 0.95)
 }
 \arguments{
-\item{data}{an object of class "mFilter" containing the output of the function \code{hpfilter}.}
+\item{data}{an object of class "mFilter" containing the output of the function \code{\link[mFilter]{hpfilter}}.}
 
 \item{V_y}{a numeric specifying the variance of the cyclical component. If \code{V_y = NULL} (default),
-the sample variance of the original series will be used.}
+the sample variance of the original time series will be used.}
 
-\item{ci}{numeric between 0 and 1 specifying the confidence interval, defaults to 0.05.}
+\item{ci}{numeric between 0 and 1 specifying the confidence interval, defaults to 0.95.}
 }
 \value{
 A time-series object of four variables
@@ -34,7 +34,7 @@ time series \eqn{y} is decomposed only into those two components so that \eqn{y 
 
 The confidence band is than derived from the covariance matrix \eqn{V(\hat{tau}) = Q V(y) Q}.
 
-By default \code{V_y = NULL} so that the sample variance of the cyclical componenten of the time series
+By default \code{V_y = NULL} so that the sample variance of the original time series
 is used for the construction of \eqn{V(y)}. This can be chanced by providing
 a numeric value, for example from the output of an esitmated ARIMA model for the cyclical component of the series.
 }
