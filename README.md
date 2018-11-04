@@ -2,6 +2,8 @@
 hpconf
 ======
 
+[![Build Status](https://travis-ci.org/franzmohr/hpconf.svg?branch=master)](https://travis-ci.org/franzmohr/hpconf)
+
 Overview
 --------
 
