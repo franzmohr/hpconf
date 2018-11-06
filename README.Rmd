@@ -10,11 +10,13 @@ output:
 
 ## Overview
 
-The package augments Mehmet Balcilar's [`mFilter`](https://CRAN.R-project.org/package=mFilter) package by providing a function for the calculation of confidence bands for the Hodrick-Prescott (HP) filter as proposed in [Giles (2013)](https://doi.org/10.1080/13504851.2012.714057).
+The package augments Mehmet Balcilar's [`mFilter`](https://CRAN.R-project.org/package=mFilter) package by providing a function for the calculation of confidence bands for the trend component of the Hodrick-Prescott (HP) filter as proposed by [Giles (2013)](https://doi.org/10.1080/13504851.2012.714057).
 
 *Note that the construction of such confidence bands is recommended only for stationary times series.*
 
 ## Installation
+
+### Development version
 
 ```{r, eval = FALSE}
 # install.packages("devtools")

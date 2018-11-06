@@ -12,7 +12,7 @@ hpconf(data, V_y = NULL, ci = 0.95)
 \item{V_y}{a numeric specifying the variance of the cyclical component. If \code{V_y = NULL} (default),
 the sample variance of the original time series will be used.}
 
-\item{ci}{numeric between 0 and 1 specifying the confidence interval, defaults to 0.95.}
+\item{ci}{numeric between 0 and 1 specifying the confidence interval. Defaults to 0.95.}
 }
 \value{
 A time-series object of four variables
@@ -24,7 +24,7 @@ A time-series object of four variables
 }
 }
 \description{
-Constructs confidence bands for the Hodrick-Prescott filter
+A function for the calculation of confidence bands for the trend component of the Hodrick-Prescott (HP) filter as proposed by Giles (2013).
 }
 \details{
 The function uses the filter matrix \eqn{F} from an "mFilter" object to obtain the matrix \eqn{Q = \left[I_T + \lambda K' K]^{-1}\right]}.
@@ -32,11 +32,11 @@ Since \eqn{Q y} provides an estimate of the trend \eqn{\hat{tau}} and \eqn{F y} 
 time series \eqn{y} is decomposed only into those two components so that \eqn{y = \hat{tau} + \hat{c}},
 \eqn{Q} can be obtained from \eqn{I_T y - Fy = Q y} so that \eqn{Q = I_T - F}.
 
-The confidence band is than derived from the covariance matrix \eqn{V(\hat{tau}) = Q V(y) Q}.
+The confidence band is then derived from the covariance matrix \eqn{V(\hat{tau}) = Q V(y) Q}.
 
 By default \code{V_y = NULL} so that the sample variance of the original time series
 is used for the construction of \eqn{V(y)}. This can be chanced by providing
-a numeric value, for example from the output of an esitmated ARIMA model for the cyclical component of the series.
+a numeric value, for example from the output of an esitmated ARIMA model.
 }
 \references{
 Giles, D. E. (2013). Constructing confidence bands for the Hodrick-Prescott filter. \emph{Applied Economics Letters, 20}(5), 480--484. \url{https://doi.org/10.1080/13504851.2012.714057}.
