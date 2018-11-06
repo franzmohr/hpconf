@@ -4,7 +4,7 @@ Title: Confidence Bands for the Hodrick-Prescott Filter
 Version: 0.0.9000
 Authors@R: person("Franz X.", "Mohr", email = "hpconf.r@outlook.com",
   role = c("aut", "cre"))
-Description: The package provides a function for the calculation of confidence bands for the trend component of the Hodrick-Prescott (HP) filter as proposed by Giles (2013).
+Description: An implementation for the calculation of confidence bands for the trend component of the Hodrick-Prescott (HP) filter as proposed by Giles (2013).
 Depends: R (>= 2.2.0)
 Imports: mFilter, stats
 License: GPL (>= 2)

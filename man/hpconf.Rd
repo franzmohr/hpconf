@@ -38,6 +38,23 @@ By default \code{V_y = NULL} so that the sample variance of the original time se
 is used for the construction of \eqn{V(y)}. This can be chanced by providing
 a numeric value, for example from the output of an esitmated ARIMA model.
 }
+\examples{
+library(mFilter)
+library(hpconf)
+
+# Load data
+data("unemp")
+
+# Run HP-filter
+hp_unemp <- hpfilter(unemp)
+
+# Obtain confidence bands
+hp_conf <- hpconf(hp_unemp)
+
+# Plot
+plot(hp_conf)
+
+}
 \references{
 Giles, D. E. (2013). Constructing confidence bands for the Hodrick-Prescott filter. \emph{Applied Economics Letters, 20}(5), 480--484. \url{https://doi.org/10.1080/13504851.2012.714057}.
 }
