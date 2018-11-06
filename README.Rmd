@@ -25,7 +25,7 @@ devtools::install_github("franzmohr/hpconf")
 
 The following code reproduces figures 3 and 4 in Giles (2013) in one graph.
 
-```{r example 1, message=FALSE, fig.align='center', fig.height=3.5, fig.width=5}
+```{r example 1, message=FALSE, fig.align='center', fig.height=4.5, fig.width=5.5}
 # Load packages
 library(alfred)
 library(mFilter)
