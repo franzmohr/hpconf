@@ -7,9 +7,9 @@ hpconf
 Overview
 --------
 
-Provides a function for the calculation of confidence bands for the Hodrick-Prescott (HP) filter as proposed in Giles (2013).
+Provides a function for the calculation of confidence bands for the Hodrick-Prescott (HP) filter as proposed in [Giles (2013)](https://doi.org/10.1080/13504851.2012.714057).
 
-*Note that the construction of such confidence bands is only reasonable for stationary times series.*
+*Note that the construction of such confidence bands is recommended only for stationary times series.*
 
 Installation
 ------------
@@ -22,7 +22,7 @@ devtools::install_github("franzmohr/hpconf")
 Usage
 -----
 
-The following code reproduces figures 3 and 4 in Giles (2013).
+The following code reproduces figures 3 and 4 in Giles (2013) in one graph.
 
 ``` r
 # Load packages
