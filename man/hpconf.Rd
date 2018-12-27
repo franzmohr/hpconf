@@ -56,5 +56,5 @@ plot(hp_conf)
 
 }
 \references{
-Giles, D. E. (2013). Constructing confidence bands for the Hodrick-Prescott filter. \emph{Applied Economics Letters, 20}(5), 480--484. \url{https://doi.org/10.1080/13504851.2012.714057}.
+Giles, D. E. (2013). Constructing confidence bands for the Hodrick-Prescott filter. \emph{Applied Economics Letters}, 20(5), 480--484. \url{https://doi.org/10.1080/13504851.2012.714057}
 }
