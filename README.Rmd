@@ -7,7 +7,7 @@ output:
 # hpconf
 
 [![CRAN status](https://www.r-pkg.org/badges/version/hpconf)](https://cran.r-project.org/package=hpconf)
-[![Travis build status](https://travis-ci.org/franzmohr/hpconf.svg?branch=master)](https://travis-ci.org/franzmohr/hpconf)
+[![Build Status](https://app.travis-ci.com/franzmohr/hpconf.svg?branch=master)](https://app.travis-ci.com/franzmohr/hpconf)
 
 ## Overview
 
