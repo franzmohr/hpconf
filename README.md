@@ -3,8 +3,7 @@
 
 [![CRAN
 status](https://www.r-pkg.org/badges/version/hpconf)](https://cran.r-project.org/package=hpconf)
-[![Build
-Status](https://app.travis-ci.com/franzmohr/hpconf.svg?branch=master)](https://app.travis-ci.com/franzmohr/hpconf)
+[![R-CMD-check](https://github.com/franzmohr/hpconf/workflows/R-CMD-check/badge.svg)](https://github.com/franzmohr/hpconf/actions)
 
 ## Overview
 
